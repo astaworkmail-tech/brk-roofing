@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+
+  <!-- ============================================================ -->
+  <!-- EXTERNAL DEPENDENCIES: Tailwind CSS CDN + Google Fonts       -->
+  <!-- ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================ -->
+  <!-- TAILWIND CONFIG: Custom colors, fonts, and design tokens     -->
+  <!-- ============================================================ -->
+  
+
+  
+
+<!-- SEO Meta Tags -->
+<title>BRK Roofing — Premium Residential &amp; Commercial Roofing | Free Quote</title>
+<meta name="description" content="BRK Roofing delivers premium residential and commercial roofing with 15+ years of experience, 2,400+ roofs installed, 98% satisfaction rate, and a 25-year warranty. Licensed #ROF-2009-BRK. Get your free quote today." />
+<meta property="og:title" content="BRK Roofing — Premium Residential &amp; Commercial Roofing | Free Quote" />
+<meta property="og:description" content="BRK Roofing delivers premium residential and commercial roofing with 15+ years of experience, 2,400+ roofs installed, 98% satisfaction rate, and a 25-year warranty. Licensed #ROF-2009-BRK. Get your free quote today." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BRK Roofing — Premium Residential &amp; Commercial Roofing | Free Quote" />
+<meta name="twitter:description" content="BRK Roofing delivers premium residential and commercial roofing with 15+ years of experience, 2,400+ roofs installed, 98% satisfaction rate, and a 25-year warranty. Licensed #ROF-2009-BRK. Get your free quote today." />
+<!-- End SEO Meta Tags -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-brk-dark text-white font-dm">
+
+  <!-- ============================================================================ -->
+  <!-- STICKY NAVIGATION: Glassmorphism nav with logo, links, CTA, mobile menu     -->
+  <!-- Features: Scroll shadow, hamburger toggle, smooth scroll links              -->
+  <!-- Mobile: Full-width dropdown menu with all links                             -->
+  <!-- ============================================================================ -->
+  <nav id="main-nav" class="nav-glass fixed top-0 left-0 right-0 z-50" role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+
+        <!-- BRK Logo -->
+        <a href="#home" class="flex items-center gap-3 group" aria-label="BRK Roofing Home">
+          <!-- SVG Roof Icon Logo -->
+          <div class="relative">
+            <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M19 2L2 16H6V30H16V20H22V30H32V16H36L19 2Z" fill="#f97316" stroke="#ea6c0a" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 30V22H24V30" stroke="#0f0f0f" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="font-bebas text-2xl tracking-widest text-white group-hover:text-brk-orange transition-colors duration-200">BRK</span>
+            <span class="text-[10px] font-semibold tracking-[0.25em] text-brk-orange uppercase">Roofing</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-8" role="menubar">
+          <a href="#services" class="text-sm font-medium text-brk-light hover:text-brk-orange transition-colors duration-200 tracking-wide" role="menuitem">Services</a>
+          <a href="#about" class="text-sm font-medium text-brk-light hover:text-brk-orange transition-colors duration-200 tracking-wide" role="menuitem">About</a>
+          <a href="#process" class="text-sm font-medium text-brk-light hover:text-brk-orange transition-colors duration-200 tracking-wide" role="menuitem">Process</a>
+          <a href="#testimonials" class="text-sm font-medium text-brk-light hover:text-brk-orange transition-colors duration-200 tracking-wide" role="menuitem">Testimonials</a>
+          <a href="#contact" class="text-sm font-medium text-brk-light hover:text-brk-orange transition-colors duration-200 tracking-wide" role="menuitem">Contact</a>
+        </div>
+
+        <!-- Desktop CTA Button -->
+        <div class="hidden md:block">
+          <a href="#contact" class="btn-orange-glow inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm text-white tracking-wide">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            Get Free Quote
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="hamburger md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-white/5 transition-colors"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="mobile-menu md:hidden" role="menu" aria-label="Mobile navigation">
+        <div class="py-4 border-t border-brk-border space-y-1">
+          <a href="#services"     class="block px-4 py-3 text-brk-light hover:text-brk-orange hover:bg-white/5 rounded-lg transition-all font-medium" role="menuitem">Services</a>
+          <a href="#about"        class="block px-4 py-3 text-brk-light hover:text-brk-orange hover:bg-white/5 rounded-lg transition-all font-medium" role="menuitem">About</a>
+          <a href="#process"      class="block px-4 py-3 text-brk-light hover:text-brk-orange hover:bg-white/5 rounded-lg transition-all font-medium" role="menuitem">Process</a>
+          <a href="#testimonials" class="block px-4 py-3 text-brk-light hover:text-brk-orange hover:bg-white/5 rounded-lg transition-all font-medium" role="menuitem">Testimonials</a>
+          <a href="#contact"      class="block px-4 py-3 text-brk-light hover:text-brk-orange hover:bg-white/5 rounded-lg transition-all font-medium" role="menuitem">Contact</a>
+          <div class="px-4 pt-2 pb-4">
+            <a href="#contact" class="btn-orange-glow block text-center py-3 rounded-lg font-semibold text-white">Get Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================================ -->
+  <!-- HERO SECTION: Full-viewport hero with headline, CTAs, floating stat badges  -->
+  <!-- Features: Animated headline, parallax-style bg, floating stat cards         -->
+  <!-- Mobile Padding: px-4 ensures headline never clips on small screens          -->
+  <!-- ============================================================================ -->
+  <section
+    id="home"
+    data-section="hero"
+    class="hero-bg hero-grid-bg relative min-h-screen flex flex-col justify-center pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    aria-label="Hero section"
+  >
+    <!-- Decorative orange glow orb - top right -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.04] pointer-events-none" style="background: radial-gradient(circle, #f97316, transparent 70%);"></div>
+    <!-- Decorative orange glow orb - bottom left -->
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-[0.03] pointer-events-none" style="background: radial-gradient(circle, #f97316, transparent 70%);"></div>
+
+    <!-- Animated roofline SVG decoration -->
+    <div class="absolute bottom-0 left-0 right-0 pointer-events-none opacity-10" aria-hidden="true">
+      <svg class="roofline-svg w-full" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 120 L0 80 L180 20 L360 80 L540 15 L720 75 L900 10 L1080 70 L1260 25 L1440 65 L1440 120 Z" fill="none" stroke="#f97316" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="max-w-4xl">
+
+        <!-- Section label badge -->
+        <div class="hero-animate-1 mb-6">
+          <span class="section-label">
+            <span class="dot-pulse"></span>
+            Premium Roofing Since 2009
+          </span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-animate-2 font-bebas leading-none mb-4">
+          <span class="block text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-wide">BUILT TO LAST.</span>
+          <span class="block text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-shimmer tracking-wide">DESIGNED TO</span>
+          <span class="block text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-wide">IMPRESS.</span>
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="hero-animate-3 text-lg sm:text-xl md:text-2xl text-brk-light font-light max-w-2xl mt-6 mb-10 leading-relaxed">
+          15+ Years of Premium Roofing — <span class="text-brk-orange font-medium">Residential &amp; Commercial</span>.<br class="hidden sm:block" />
+          Licensed, insured, and trusted by 2,400+ homeowners across the region.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-animate-4 flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="btn-orange-glow inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white tracking-wide">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            Get Your Free Quote
+          </a>
+          <a href="tel:5552475625" class="btn-outline-white inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-white tracking-wide">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            (555) 247-5625
+          </a>
+        </div>
+
+        <!-- Floating Stat Badges - Desktop positioned, mobile stacked -->
+        <div class="hero-badges-container mt-16 flex flex-wrap gap-4 md:flex-nowrap md:gap-6">
+
+          <!-- Badge 1: Roofs Installed -->
+          <div class="badge-float-1 hero-stat-badge rounded-2xl px-5 py-4 flex items-center gap-4 min-w-[160px]">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.15);">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H15V15H9V21H4C3.44772 21 3 20.5523 3 20V12Z" fill="#f97316" opacity="0.8"/>
+                <path d="M3 12L12 3L21 12" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-bebas text-3xl text-brk-orange tracking-wide leading-none">2,400+</div>
+              <div class="text-xs text-brk-muted font-medium mt-0.5 tracking-wide uppercase">Roofs Installed</div>
+            </div>
+          </div>
+
+          <!-- Badge 2: Satisfaction Rate -->
+          <div class="badge-float-2 hero-stat-badge rounded-2xl px-5 py-4 flex items-center gap-4 min-w-[160px]">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.15);">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#f97316" opacity="0.8" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-bebas text-3xl text-brk-orange tracking-wide leading-none">98%</div>
+              <div class="text-xs text-brk-muted font-medium mt-0.5 tracking-wide uppercase">Satisfaction Rate</div>
+            </div>
+          </div>
+
+          <!-- Badge 3: Warranty -->
+          <div class="badge-float-3 hero-stat-badge rounded-2xl px-5 py-4 flex items-center gap-4 min-w-[160px]">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.15);">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2L4 6V12C4 16.4183 7.58172 20.5 12 22C16.4183 20.5 20 16.4183 20 12V6L12 2Z" fill="#f97316" opacity="0.7" stroke="#f97316" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="#0f0f0f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-bebas text-3xl text-brk-orange tracking-wide leading-none">25-YR</div>
+              <div class="text-xs text-brk-muted font-medium mt-0.5 tracking-wide uppercase">Warranty</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40" aria-hidden="true">
+      <span class="text-xs tracking-widest uppercase text-brk-muted font-medium">Scroll</span>
+      <div class="w-px h-12 bg-gradient-to-b from-brk-orange to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- TRUST BAR: Social proof badges — Licensed, BBB, GAF, Google Reviews         -->
+  <!-- Features: Hover effects, icon badges, responsive grid                       -->
+  <!-- ============================================================================ -->
+  <section
+    id="trust-bar"
+    data-section="trust-bar"
+    class="bg-brk-card border-y border-brk-border py-6"
+    aria-label="Trust and certifications"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-0 divide-y md:divide-y-0 divide-brk-border">
+
+        <!-- Licensed & Insured -->
+        <div class="trust-item flex items-center justify-center gap-3 px-6 py-5 cursor-default">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.12);">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 12L11 14L15 10M12 3L4 7V13C4 17.4183 7.58172 21 12 21C16.4183 21 20 17.4183 20 13V7L12 3Z" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">Licensed &amp; Insured</div>
+            <div class="text-xs text-brk-muted">#ROF-2009-BRK</div>
+          </div>
+        </div>
+
+        <!-- BBB A+ Rated -->
+        <div class="trust-item flex items-center justify-center gap-3 px-6 py-5 cursor-default">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.12);">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">BBB A+ Rated</div>
+            <div class="text-xs text-brk-muted">Accredited Business</div>
+          </div>
+        </div>
+
+        <!-- GAF Master Elite -->
+        <div class="trust-item flex items-center justify-center gap-3 px-6 py-5 cursor-default">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.12);">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 3H19C19.5523 3 20 3.44772 20 4V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4C4 3.44772 4.44772 3 5 3Z" stroke="#f97316" stroke-width="2"/>
+              <path d="M9 7H15M9 11H15M9 15H12" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white">GAF Master Elite</div>
+            <div class="text-xs text-brk-muted">Certified Contractor</div>
+          </div>
+        </div>
+
+        <!-- 5-Star Google Reviews -->
+        <div class="trust-item flex items-center justify-center gap-3 px-6 py-5 cursor-default">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.12);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#f97316" opacity="0.7"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#f97316" opacity="0.5"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#f97316" opacity="0.3"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#f97316"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold text-white flex items-center gap-1">
+              5-Star Google
+              <span class="text-brk-orange">★★★★★</span>
+            </div>
+            <div class="text-xs text-brk-muted">500+ Reviews</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- SERVICES SECTION: 6-card grid with SVG icons, hover lift, orange accents    -->
+  <!-- Services: Residential, Commercial, Repair, Emergency, Gutters, Inspection   -->
+  <!-- Features: Scroll reveal animations, stagger delays                          -->
+  <!-- ============================================================================ -->
+  <section
+    id="services"
+    data-section="services"
+    class="py-24 px-4 sm:px-6 lg:px-8 bg-brk-dark"
+    aria-labelledby="services-heading"
+  >
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="section-label mb-4 inline-flex">
+          <span class="dot-pulse"></span>
+          What We Do
+        </span>
+        <h2 id="services-heading" class="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wide mt-4">
+          OUR <span class="text-gradient-orange">SERVICES</span>
+        </h2>
+        <div class="orange-divider mx-auto mt-6 mb-6"></div>
+        <p class="text-brk-light text-lg max-w-2xl mx-auto leading-relaxed">
+          From complete roof replacements to emergency repairs, BRK Roofing delivers precision craftsmanship on every project — no shortcuts, no compromises.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1: Residential Roofing -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-1" data-service="residential">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H15V15H9V21H4C3.44772 21 3 20.5523 3 20V12Z" fill="#f97316" opacity="0.2" stroke="#f97316" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M3 12L12 3L21 12" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Residential Roofing</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">Complete roof replacements and new installations for homes of all sizes. We use premium materials backed by our 25-year workmanship warranty.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Get a Quote
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 2: Commercial Roofing -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-2" data-service="commercial">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="7" width="20" height="14" rx="1" fill="#f97316" opacity="0.15" stroke="#f97316" stroke-width="1.8"/>
+              <path d="M2 7L12 2L22 7" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="9" y="12" width="6" height="9" fill="#f97316" opacity="0.3"/>
+              <path d="M6 11H8M16 11H18M6 14H8M16 14H18" stroke="#f97316" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Commercial Roofing</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">Flat roofs, TPO, EPDM, and metal roofing systems for commercial properties. Minimal disruption to your business operations during installation.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Get a Quote
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 3: Roof Repair -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-3" data-service="repair">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="#f97316" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="#f97316" fill-opacity="0.15"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Roof Repair</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">Leaks, missing shingles, storm damage — we diagnose and fix roofing issues fast. Most repairs completed same-day or next-day with a full inspection report.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Get a Quote
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 4: Emergency Services -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-4" data-service="emergency">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="#f97316" fill-opacity="0.2" stroke="#f97316" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Emergency Services</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">24/7 emergency response for storm damage, fallen trees, and sudden leaks. We deploy within hours to protect your property from further damage.</p>
+          <a href="tel:5552475625" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Call Now
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 5: Gutters -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-5" data-service="gutters">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 5H21V9H3V5Z" fill="#f97316" fill-opacity="0.2" stroke="#f97316" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M5 9V18C5 18.5523 5.44772 19 6 19H8" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M19 9V18C19 18.5523 18.5523 19 18 19H16" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M8 19C8 20.1046 8.89543 21 10 21H14C15.1046 21 16 20.1046 16 19" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Gutters &amp; Drainage</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">Seamless gutter installation, cleaning, and repair. Protect your foundation and landscaping with properly designed drainage systems built to last.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Get a Quote
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 6: Roof Inspection -->
+        <div class="service-card rounded-2xl p-8 reveal stagger-6" data-service="inspection">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-6" style="background: rgba(249,115,22,0.12);">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="#f97316" fill-opacity="0.15" stroke="#f97316" stroke-width="1.8"/>
+              <path d="M20 20L16.65 16.65" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 11H13M11 9V13" stroke="#f97316" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Roof Inspection</h3>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">Comprehensive 27-point roof inspections with detailed photo reports. Perfect for home buyers, sellers, or annual maintenance checks. Free with any project.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 text-brk-orange text-sm font-semibold hover:gap-3 transition-all duration-200">
+            Schedule Inspection
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- STATS SECTION: Animated counters with dark gradient background               -->
+  <!-- Stats: 2400 roofs, 15 years, 98% satisfaction, 500+ reviews                 -->
+  <!-- Features: IntersectionObserver triggers counter animation on scroll          -->
+  <!-- ============================================================================ -->
+  <section
+    id="about"
+    data-section="stats"
+    class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+    style="background: linear-gradient(135deg, #141414, #1a1a1a, #141414);"
+    aria-labelledby="stats-heading"
+  >
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #f97316, transparent 70%);"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-96 rounded-full opacity-[0.03]" style="background: radial-gradient(circle, #f97316, transparent 70%);"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="section-label mb-4 inline-flex">
+          <span class="dot-pulse"></span>
+          By The Numbers
+        </span>
+        <h2 id="stats-heading" class="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wide mt-4">
+          THE <span class="text-gradient-orange">BRK</span> DIFFERENCE
+        </h2>
+        <div class="orange-divider mx-auto mt-6 mb-6"></div>
+        <p class="text-brk-light text-lg max-w-2xl mx-auto leading-relaxed">
+          Since 2009, we've been setting the standard for roofing excellence. These aren't just numbers — they're the proof of our commitment to every customer.
+        </p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Stat 1: Roofs Installed -->
+        <div class="stat-card rounded-2xl p-8 text-center reveal stagger-1">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(249,115,22,0.1);">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H15V15H9V21H4C3.44772 21 3 20.5523 3 20V12Z" fill="#f97316" opacity="0.3" stroke="#f97316" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="font-bebas text-5xl sm:text-6xl text-brk-orange tracking-wide leading-none mb-2">
+            <span class="counter" data-target="2400" data-suffix="+">0</span>
+          </div>
+          <div class="text-white font-semibold text-sm tracking-wide uppercase mb-2">Roofs Installed</div>
+          <div class="text-brk-muted text-xs leading-relaxed">Residential &amp; commercial projects completed since 2009</div>
+        </div>
+
+        <!-- Stat 2: Years Experience -->
+        <div class="stat-card rounded-2xl p-8 text-center reveal stagger-2">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(249,115,22,0.1);">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="#f97316" stroke-width="1.5" fill="#f97316" fill-opacity="0.1"/>
+              <path d="M12 7V12L15 15" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="font-bebas text-5xl sm:text-6xl text-brk-orange tracking-wide leading-none mb-2">
+            <span class="counter" data-target="15" data-suffix="+">0</span>
+          </div>
+          <div class="text-white font-semibold text-sm tracking-wide uppercase mb-2">Years Experience</div>
+          <div class="text-brk-muted text-xs leading-relaxed">Over a decade and a half of roofing mastery in the region</div>
+        </div>
+
+        <!-- Stat 3: Satisfaction Rate -->
+        <div class="stat-card rounded-2xl p-8 text-center reveal stagger-3">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(249,115,22,0.1);">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#f97316" fill-opacity="0.25" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="font-bebas text-5xl sm:text-6xl text-brk-orange tracking-wide leading-none mb-2">
+            <span class="counter" data-target="98" data-suffix="%">0</span>
+          </div>
+          <div class="text-white font-semibold text-sm tracking-wide uppercase mb-2">Satisfaction Rate</div>
+          <div class="text-brk-muted text-xs leading-relaxed">Verified customer satisfaction across all completed projects</div>
+        </div>
+
+        <!-- Stat 4: Google Reviews -->
+        <div class="stat-card rounded-2xl p-8 text-center reveal stagger-4">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(249,115,22,0.1);">
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" fill="#f97316" fill-opacity="0.2" stroke="#f97316" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 10H16M8 14H13" stroke="#f97316" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="font-bebas text-5xl sm:text-6xl text-brk-orange tracking-wide leading-none mb-2">
+            <span class="counter" data-target="500" data-suffix="+">0</span>
+          </div>
+          <div class="text-white font-semibold text-sm tracking-wide uppercase mb-2">5-Star Reviews</div>
+          <div class="text-brk-muted text-xs leading-relaxed">Verified Google reviews from real BRK Roofing customers</div>
+        </div>
+
+      </div>
+
+      <!-- Additional trust content below stats -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+        <div class="badge-card rounded-xl p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.1);">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 12L11 14L15 10M12 3L4 7V13C4 17.4183 7.58172 21 12 21C16.4183 21 20 17.4183 20 13V7L12 3Z" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-white text-sm">25-Year Warranty</div>
+            <div class="text-brk-muted text-xs mt-1">Comprehensive workmanship &amp; materials coverage on every install</div>
+          </div>
+        </div>
+        <div class="badge-card rounded-xl p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.1);">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#f97316" fill-opacity="0.15"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-white text-sm">24/7 Emergency Response</div>
+            <div class="text-brk-muted text-xs mt-1">We're available around the clock for urgent roofing emergencies</div>
+          </div>
+        </div>
+        <div class="badge-card rounded-xl p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.1);">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.1"/>
+              <path d="M8 12L11 15L16 9" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-white text-sm">Free Estimates</div>
+            <div class="text-brk-muted text-xs mt-1">No-obligation quotes with detailed breakdowns, always free of charge</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- PROCESS SECTION: 4-step timeline — Inspection, Quote, Install, Walkthrough  -->
+  <!-- Features: Connected timeline, numbered steps, scroll reveal                 -->
+  <!-- ============================================================================ -->
+  <section
+    id="process"
+    data-section="process"
+    class="py-24 px-4 sm:px-6 lg:px-8 bg-brk-dark"
+    aria-labelledby="process-heading"
+  >
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="section-label mb-4 inline-flex">
+          <span class="dot-pulse"></span>
+          Simple Process
+        </span>
+        <h2 id="process-heading" class="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wide mt-4">
+          HOW IT <span class="text-gradient-orange">WORKS</span>
+        </h2>
+        <div class="orange-divider mx-auto mt-6 mb-6"></div>
+        <p class="text-brk-light text-lg max-w-2xl mx-auto leading-relaxed">
+          We've streamlined our process so you get a beautiful, durable roof with zero stress. Here's what to expect from day one to final walkthrough.
+        </p>
+      </div>
+
+      <!-- Process Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+
+        <!-- Connecting line (desktop) -->
+        <div class="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-px" style="background: linear-gradient(90deg, #f97316, rgba(249,115,22,0.3));" aria-hidden="true"></div>
+
+        <!-- Step 1: Inspection -->
+        <div class="process-step text-center reveal stagger-1">
+          <div class="relative inline-block mb-6">
+            <div class="step-number w-20 h-20 rounded-full flex items-center justify-center mx-auto relative z-10">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
+                <path d="M20 20L16.65 16.65" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M9 11H13M11 9V13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brk-dark border-2 border-brk-orange flex items-center justify-center">
+              <span class="font-bebas text-brk-orange text-sm leading-none">1</span>
+            </div>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Free Inspection</h3>
+          <p class="text-brk-muted text-sm leading-relaxed">Our certified inspector performs a thorough 27-point roof assessment, identifying all issues with detailed photo documentation.</p>
+        </div>
+
+        <!-- Step 2: Quote -->
+        <div class="process-step text-center reveal stagger-2">
+          <div class="relative inline-block mb-6">
+            <div class="step-number w-20 h-20 rounded-full flex items-center justify-center mx-auto relative z-10">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12H15M9 16H12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brk-dark border-2 border-brk-orange flex items-center justify-center">
+              <span class="font-bebas text-brk-orange text-sm leading-none">2</span>
+            </div>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Transparent Quote</h3>
+          <p class="text-brk-muted text-sm leading-relaxed">Receive a detailed, itemized quote with material options, timelines, and pricing — no hidden fees, no surprises, ever.</p>
+        </div>
+
+        <!-- Step 3: Installation -->
+        <div class="process-step text-center reveal stagger-3">
+          <div class="relative inline-block mb-6">
+            <div class="step-number w-20 h-20 rounded-full flex items-center justify-center mx-auto relative z-10">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 12L12 3L21 12V20C21 20.5523 20.5523 21 20 21H15V15H9V21H4C3.44772 21 3 20.5523 3 20V12Z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="white" fill-opacity="0.15"/>
+                <path d="M3 12L12 3L21 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brk-dark border-2 border-brk-orange flex items-center justify-center">
+              <span class="font-bebas text-brk-orange text-sm leading-none">3</span>
+            </div>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Expert Installation</h3>
+          <p class="text-brk-muted text-sm leading-relaxed">Our GAF-certified crews install your roof with precision, using premium materials and protecting your property throughout the project.</p>
+        </div>
+
+        <!-- Step 4: Walkthrough -->
+        <div class="process-step text-center reveal stagger-4">
+          <div class="relative inline-block mb-6">
+            <div class="step-number w-20 h-20 rounded-full flex items-center justify-center mx-auto relative z-10">
+              <svg width="32" height="32" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 12L11 14L15 10M12 3L4 7V13C4 17.4183 7.58172 21 12 21C16.4183 21 20 17.4183 20 13V7L12 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="white" fill-opacity="0.15"/>
+              </svg>
+            </div>
+            <div class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brk-dark border-2 border-brk-orange flex items-center justify-center">
+              <span class="font-bebas text-brk-orange text-sm leading-none">4</span>
+            </div>
+          </div>
+          <h3 class="font-bebas text-2xl text-white tracking-wide mb-3">Final Walkthrough</h3>
+          <p class="text-brk-muted text-sm leading-relaxed">We walk you through the completed project, review the work, hand over your warranty documents, and ensure 100% satisfaction.</p>
+        </div>
+
+      </div>
+
+      <!-- CTA Below Process -->
+      <div class="text-center mt-16 reveal">
+        <p class="text-brk-muted mb-6">Ready to get started? Most projects begin within 1–2 weeks of approval.</p>
+        <a href="#contact" class="btn-orange-glow inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-white tracking-wide">
+          Start Your Free Inspection
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- TESTIMONIALS SECTION: 3 customer reviews with star ratings and avatars      -->
+  <!-- Customers: Marcus T., Sandra K., James R.                                   -->
+  <!-- Features: 5-star ratings, quote decorations, scroll reveal                  -->
+  <!-- ============================================================================ -->
+  <section
+    id="testimonials"
+    data-section="testimonials"
+    class="py-24 px-4 sm:px-6 lg:px-8"
+    style="background: linear-gradient(135deg, #141414, #1a1a1a, #141414);"
+    aria-labelledby="testimonials-heading"
+  >
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="section-label mb-4 inline-flex">
+          <span class="dot-pulse"></span>
+          Customer Stories
+        </span>
+        <h2 id="testimonials-heading" class="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wide mt-4">
+          WHAT CLIENTS <span class="text-gradient-orange">SAY</span>
+        </h2>
+        <div class="orange-divider mx-auto mt-6 mb-6"></div>
+        <p class="text-brk-light text-lg max-w-2xl mx-auto leading-relaxed">
+          Don't just take our word for it. Here's what real homeowners and business owners say about their BRK Roofing experience.
+        </p>
+        <!-- Star rating summary -->
+        <div class="flex items-center justify-center gap-2 mt-6">
+          <div class="flex gap-1" aria-label="5 out of 5 stars">
+            <span class="text-brk-orange text-xl">★</span>
+            <span class="text-brk-orange text-xl">★</span>
+            <span class="text-brk-orange text-xl">★</span>
+            <span class="text-brk-orange text-xl">★</span>
+            <span class="text-brk-orange text-xl">★</span>
+          </div>
+          <span class="text-white font-bold">5.0</span>
+          <span class="text-brk-muted text-sm">· 500+ Google Reviews</span>
+        </div>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Testimonial 1: Marcus T. -->
+        <div class="testimonial-card rounded-2xl p-8 relative reveal stagger-1">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <!-- Stars -->
+          <div class="flex gap-1 mb-5" aria-label="5 stars">
+            <span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span>
+          </div>
+          <!-- Review text -->
+          <blockquote class="text-brk-light text-sm leading-relaxed mb-6 relative z-10">
+            "BRK Roofing completely transformed our home. After the storm last spring, we had major damage and were stressed out. Their team showed up the next morning, gave us a fair quote, and had the entire roof done in two days. The craftsmanship is incredible — you can see the quality difference. Highly recommend to anyone in the area."
+          </blockquote>
+          <!-- Reviewer info -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-xl text-white flex-shrink-0" style="background: linear-gradient(135deg, #f97316, #ea6c0a);" aria-label="Marcus T. avatar">MT</div>
+            <div>
+              <div class="font-bold text-white text-sm">Marcus T.</div>
+              <div class="text-brk-muted text-xs">Homeowner · Verified Google Review</div>
+            </div>
+            <div class="ml-auto">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-label="Google" title="Google">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2: Sandra K. -->
+        <div class="testimonial-card rounded-2xl p-8 relative reveal stagger-2" style="border-color: rgba(249,115,22,0.2);">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <!-- Stars -->
+          <div class="flex gap-1 mb-5" aria-label="5 stars">
+            <span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span>
+          </div>
+          <!-- Review text -->
+          <blockquote class="text-brk-light text-sm leading-relaxed mb-6 relative z-10">
+            "We've used three roofing companies over the years and BRK is in a completely different league. They installed a new commercial roof on our restaurant and the project manager communicated every step of the way. Zero disruption to our business. The 25-year warranty gives us total peace of mind. This is the only roofing company I'll ever call again."
+          </blockquote>
+          <!-- Reviewer info -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-xl text-white flex-shrink-0" style="background: linear-gradient(135deg, #f97316, #ea6c0a);" aria-label="Sandra K. avatar">SK</div>
+            <div>
+              <div class="font-bold text-white text-sm">Sandra K.</div>
+              <div class="text-brk-muted text-xs">Restaurant Owner · Verified Google Review</div>
+            </div>
+            <div class="ml-auto">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-label="Google" title="Google">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3: James R. -->
+        <div class="testimonial-card rounded-2xl p-8 relative reveal stagger-3">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <!-- Stars -->
+          <div class="flex gap-1 mb-5" aria-label="5 stars">
+            <span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span><span class="text-brk-orange">★</span>
+          </div>
+          <!-- Review text -->
+          <blockquote class="text-brk-light text-sm leading-relaxed mb-6 relative z-10">
+            "I called BRK for what I thought was a small leak. Turns out I needed a full replacement. They were honest about it, showed me the photos, and explained exactly why. Their crew was professional, fast, and left the property spotless. The new roof looks absolutely stunning. Best money I've ever spent on my home. Five stars without hesitation."
+          </blockquote>
+          <!-- Reviewer info -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center font-bebas text-xl text-white flex-shrink-0" style="background: linear-gradient(135deg, #f97316, #ea6c0a);" aria-label="James R. avatar">JR</div>
+            <div>
+              <div class="font-bold text-white text-sm">James R.</div>
+              <div class="text-brk-muted text-xs">Homeowner · Verified Google Review</div>
+            </div>
+            <div class="ml-auto">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-label="Google" title="Google">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- CONTACT SECTION: Split layout — left form + right contact info/hours        -->
+  <!-- Form fields: Name, Phone, Email, Service dropdown, Message                  -->
+  <!-- Features: Orange submit button, contact details, business hours             -->
+  <!-- ============================================================================ -->
+  <section
+    id="contact"
+    data-section="contact"
+    class="contact-section-bg py-24 px-4 sm:px-6 lg:px-8"
+    aria-labelledby="contact-heading"
+  >
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="section-label mb-4 inline-flex">
+          <span class="dot-pulse"></span>
+          Free Estimate
+        </span>
+        <h2 id="contact-heading" class="font-bebas text-5xl sm:text-6xl md:text-7xl text-white tracking-wide mt-4">
+          GET YOUR <span class="text-gradient-orange">FREE QUOTE</span>
+        </h2>
+        <div class="orange-divider mx-auto mt-6 mb-6"></div>
+        <p class="text-brk-light text-lg max-w-2xl mx-auto leading-relaxed">
+          Ready to protect your property with a premium roof? Fill out the form and we'll reach out within 24 hours to schedule your free inspection.
+        </p>
+      </div>
+
+      <!-- Contact Split Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+
+        <!-- Left: Contact Form -->
+        <div class="lg:col-span-3 reveal-left">
+          <div class="bg-brk-card border border-brk-border rounded-2xl p-8">
+            <h3 class="font-bebas text-3xl text-white tracking-wide mb-2">Request a Free Inspection</h3>
+            <p class="text-brk-muted text-sm mb-8">We'll contact you within 24 hours. No commitment required.</p>
+
+            <form id="contact-form" class="space-y-5" novalidate aria-label="Contact form">
+              <!-- Name + Phone Row -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="full-name" class="block text-sm font-semibold text-brk-light mb-2">Full Name <span class="text-brk-orange" aria-label="required">*</span></label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="full_name"
+                    class="form-input w-full rounded-xl px-4 py-3.5 text-sm"
+                    placeholder="John Smith"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-semibold text-brk-light mb-2">Phone Number <span class="text-brk-orange" aria-label="required">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input w-full rounded-xl px-4 py-3.5 text-sm"
+                    placeholder="(555) 000-0000"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-sm font-semibold text-brk-light mb-2">Email Address <span class="text-brk-orange" aria-label="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input w-full rounded-xl px-4 py-3.5 text-sm"
+                  placeholder="john@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <!-- Service Dropdown -->
+              <div>
+                <label for="service" class="block text-sm font-semibold text-brk-light mb-2">Service Needed</label>
+                <select
+                  id="service"
+                  name="service"
+                  class="form-input w-full rounded-xl px-4 py-3.5 text-sm appearance-none cursor-pointer"
+                  style="background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\"); background-repeat: no-repeat; background-position: right 16px center;"
+                >
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="residential">Residential Roofing</option>
+                  <option value="commercial">Commercial Roofing</option>
+                  <option value="repair">Roof Repair</option>
+                  <option value="emergency">Emergency Services</option>
+                  <option value="gutters">Gutters &amp; Drainage</option>
+                  <option value="inspection">Roof Inspection</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-semibold text-brk-light mb-2">Tell Us About Your Project</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="form-input w-full rounded-xl px-4 py-3.5 text-sm resize-none"
+                  placeholder="Describe your roofing needs, property type, any current issues..."
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button
+                  type="submit"
+                  id="form-submit-btn"
+                  class="btn-orange-glow w-full py-4 rounded-xl font-bold text-white text-base tracking-wide flex items-center justify-center gap-3"
+                  aria-label="Submit quote request"
+                >
+                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  Send My Free Quote Request
+                </button>
+                <p class="text-brk-muted text-xs text-center mt-3">
+                  <svg class="inline w-3 h-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                  Your information is 100% secure and never shared.
+                </p>
+              </div>
+
+              <!-- Success Message (hidden by default) -->
+              <div id="form-success" class="hidden rounded-xl p-4 text-center" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3);" role="alert" aria-live="polite">
+                <div class="text-green-400 font-semibold text-sm">✓ Your request has been sent! We'll contact you within 24 hours.</div>
+              </div>
+
+              <!-- Error Message (hidden by default) -->
+              <div id="form-error" class="hidden rounded-xl p-4 text-center" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3);" role="alert" aria-live="polite">
+                <div class="text-red-400 font-semibold text-sm">Please fill in all required fields.</div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: Contact Info + Hours -->
+        <div class="lg:col-span-2 reveal-right space-y-6">
+
+          <!-- Contact Details Card -->
+          <div class="bg-brk-card border border-brk-border rounded-2xl p-8">
+            <h3 class="font-bebas text-2xl text-white tracking-wide mb-6">Get In Touch</h3>
+            <div class="space-y-5">
+
+              <!-- Phone -->
+              <a href="tel:5552475625" class="contact-info-item flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors" style="background: rgba(249,115,22,0.1);">
+                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#f97316" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs text-brk-muted uppercase tracking-wide font-medium mb-0.5">Phone</div>
+                  <div class="text-white font-semibold group-hover:text-brk-orange transition-colors">(555) 247-5625</div>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:info@brkroofing.com" class="contact-info-item flex items-center gap-4 group">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.1);">
+                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#f97316" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs text-brk-muted uppercase tracking-wide font-medium mb-0.5">Email</div>
+                  <div class="text-white font-semibold group-hover:text-brk-orange transition-colors">info@brkroofing.com</div>
+                </div>
+              </a>
+
+              <!-- License -->
+              <div class="contact-info-item flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(249,115,22,0.1);">
+                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#f97316" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs text-brk-muted uppercase tracking-wide font-medium mb-0.5">License Number</div>
+                  <div class="text-white font-semibold">#ROF-2009-BRK</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Business Hours Card -->
+          <div class="bg-brk-card border border-brk-border rounded-2xl p-8">
+            <h3 class="font-bebas text-2xl text-white tracking-wide mb-6">Business Hours</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center py-2 border-b border-brk-border">
+                <span class="text-brk-light text-sm font-medium">Monday – Friday</span>
+                <span class="text-brk-orange text-sm font-bold">7:00 AM – 7:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-brk-border">
+                <span class="text-brk-light text-sm font-medium">Saturday</span>
+                <span class="text-brk-orange text-sm font-bold">8:00 AM – 5:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-brk-border">
+                <span class="text-brk-light text-sm font-medium">Sunday</span>
+                <span class="text-brk-muted text-sm font-medium">Closed</span>
+              </div>
+              <div class="flex justify-between items-center py-2">
+                <span class="text-brk-light text-sm font-medium">Emergency Line</span>
+                <span class="text-green-400 text-sm font-bold">24 / 7</span>
+              </div>
+            </div>
+            <div class="mt-6 rounded-xl p-4" style="background: rgba(249,115,22,0.08); border: 1px solid rgba(249,115,22,0.15);">
+              <div class="flex items-center gap-2 text-brk-orange text-sm font-semibold">
+                <span class="dot-pulse"></span>
+                Emergency? Call us anytime.
+              </div>
+              <a href="tel:5552475625" class="block text-white font-bold text-lg mt-1 hover:text-brk-orange transition-colors">(555) 247-5625</a>
+            </div>
+          </div>
+
+          <!-- Founded Badge -->
+          <div class="bg-brk-card border border-brk-border rounded-2xl p-6 flex items-center gap-5">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, rgba(249,115,22,0.2), rgba(249,115,22,0.05)); border: 1px solid rgba(249,115,22,0.2);">
+              <span class="font-bebas text-brk-orange text-2xl tracking-wide">2009</span>
+            </div>
+            <div>
+              <div class="text-white font-bold text-sm">Family-Owned Since 2009</div>
+              <div class="text-brk-muted text-xs mt-1 leading-relaxed">15+ years serving homeowners and businesses with integrity and craftsmanship.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Links, license, social, copyright 2026                              -->
+  <!-- Features: Multi-column layout, orange gradient top border, social icons     -->
+  <!-- ============================================================================ -->
+  <footer
+    data-section="footer"
+    class="bg-brk-darker pt-16 pb-8 px-4 sm:px-6 lg:px-8"
+    role="contentinfo"
+    aria-label="Site footer"
+  >
+    <!-- Gradient top border -->
+    <div class="footer-top-border mb-16"></div>
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Footer Top Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+        <!-- Column 1: Brand -->
+        <div class="lg:col-span-1">
+          <!-- Logo -->
+          <a href="#home" class="flex items-center gap-3 mb-5" aria-label="BRK Roofing Home">
+            <svg width="36" height="30" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M19 2L2 16H6V30H16V20H22V30H32V16H36L19 2Z" fill="#f97316" stroke="#ea6c0a" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <div class="flex flex-col leading-none">
+              <span class="font-bebas text-2xl tracking-widest text-white">BRK ROOFING</span>
+              <span class="text-[10px] font-medium tracking-[0.2em] text-brk-orange uppercase">Premium Roofing Since 2009</span>
+            </div>
+          </a>
+          <p class="text-brk-muted text-sm leading-relaxed mb-6">
+            Licensed, insured, and trusted by 2,400+ homeowners and businesses. We build roofs that last a lifetime — backed by our 25-year warranty.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex gap-3" aria-label="Social media links">
+            <a href="#" class="w-10 h-10 rounded-lg flex items-center justify-center border border-brk-border hover:border-brk-orange hover:bg-brk-orange/10 transition-all" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" class="text-brk-muted" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-lg flex items-center justify-center border border-brk-border hover:border-brk-orange hover:bg-brk-orange/10 transition-all" aria-label="Instagram">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-brk-muted" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-lg flex items-center justify-center border border-brk-border hover:border-brk-orange hover:bg-brk-orange/10 transition-all" aria-label="Google Business">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-brk-muted" aria-hidden="true">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#888"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#888"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#888"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#888"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div>
+          <h4 class="font-bebas text-xl text-white tracking-wide mb-5">Services</h4>
+          <ul class="space-y-3" role="list">
+            <li><a href="#services" class="footer-link text-sm">Residential Roofing</a></li>
+            <li><a href="#services" class="footer-link text-sm">Commercial Roofing</a></li>
+            <li><a href="#services" class="footer-link text-sm">Roof Repair</a></li>
+            <li><a href="#services" class="footer-link text-sm">Emergency Services</a></li>
+            <li><a href="#services" class="footer-link text-sm">Gutters &amp; Drainage</a></li>
+            <li><a href="#services" class="footer-link text-sm">Roof Inspection</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div>
+          <h4 class="font-bebas text-xl text-white tracking-wide mb-5">Company</h4>
+          <ul class="space-y-3" role="list">
+            <li><a href="#about" class="footer-link text-sm">About BRK Roofing</a></li>
+            <li><a href="#process" class="footer-link text-sm">Our Process</a></li>
+            <li><a href="#testimonials" class="footer-link text-sm">Testimonials</a></li>
+            <li><a href="#contact" class="footer-link text-sm">Get a Free Quote</a></li>
+            <li><a href="tel:5552475625" class="footer-link text-sm">24/7 Emergency</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Certifications -->
+        <div>
+          <h4 class="font-bebas text-xl text-white tracking-wide mb-5">Certifications</h4>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-brk-orange flex-shrink-0" aria-hidden="true"></div>
+              <span class="text-brk-muted text-sm">GAF Master Elite Contractor</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-brk-orange flex-shrink-0" aria-hidden="true"></div>
+              <span class="text-brk-muted text-sm">BBB Accredited — A+ Rating</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-brk-orange flex-shrink-0" aria-hidden="true"></div>
+              <span class="text-brk-muted text-sm">Licensed &amp; Fully Insured</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-brk-orange flex-shrink-0" aria-hidden="true"></div>
+              <span class="text-brk-muted text-sm">OSHA Safety Certified</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-brk-orange flex-shrink-0" aria-hidden="true"></div>
+              <span class="text-brk-muted text-sm">25-Year Workmanship Warranty</span>
+            </div>
+          </div>
+          <!-- License badge -->
+          <div class="mt-6 px-4 py-3 rounded-lg" style="background: rgba(249,115,22,0.06); border: 1px solid rgba(249,115,22,0.15);">
+            <div class="text-xs text-brk-muted">License Number</div>
+            <div class="text-brk-orange font-bold text-sm mt-0.5">#ROF-2009-BRK</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="border-t border-brk-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-brk-muted text-sm text-center sm:text-left">
+          © 2026 BRK Roofing. All rights reserved. License #ROF-2009-BRK
+        </p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="footer-link text-xs">Privacy Policy</a>
+          <a href="#" class="footer-link text-xs">Terms of Service</a>
+          <a href="#" class="footer-link text-xs">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================================ -->
+  <!-- BRK ROOFING CHAT WIDGET PLACEHOLDER                                         -->
+  <!-- Insert your chat widget script here (e.g., Drift, Intercom, LiveChat)       -->
+  <!-- Example: <script src="https://widget.example.com/chat.js"></script>         -->
+  <!-- ============================================================================ -->
+
+  <!-- ============================================================================ -->
+  <!-- JAVASCRIPT: All interactive features                                         -->
+  <!-- Includes: Nav scroll, mobile menu, scroll reveal, counter animation         -->
+  <!-- ============================================================================ -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
